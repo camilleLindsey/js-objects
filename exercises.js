@@ -13,9 +13,15 @@ Objects in Javascript can be compared to objects in real life. Objects has a col
     
     Console.log the object.
 */
-    var books = {title: "The Obstacle is the Way", author: "Ryan Holiday", category: "Self Help", pages: 200};
-    console.log(books)
-/*
+    var books = {
+      title: "the obstacle is the way",
+      author: "ryan holiday ",
+      category: "self help",
+      pages: 200,
+    }
+console.log(books)
+    /*
+
 2.  Declare a variable named `dog` and create the following properties (key-value pairs) to the object:
    
     - add a key named `name` and set it to a string value of your choice
@@ -30,19 +36,16 @@ Objects in Javascript can be compared to objects in real life. Objects has a col
        "My dog `name` is `age` year old and likes to `speak` at strangers."
       */ 
 
-
 var dog = {
-    name: "Bentley", 
-    age: 11, 
-    vegetarian: true, 
-    color: ["white", "off white"], 
-    speak: function(){
-        return "bark!";
-    }
+  name: 'ben',
+  age: 3,
+vegetarian: true,
+color: ["white, snow"],
+speak: function(){
+  return "bark!";
+}
 };
-
-console.log("My dog " + dog.name + " is " + dog.age + " year old and likes to " + dog.speak() + " at strangers.");
-
+console.log(dog);
 
 //An empty object
 
@@ -98,7 +101,12 @@ console.log(plainBox)
     console.log the object
 */
 
-var stockCar = {model: "Ford", year: 2013, automaticTransmission: true, driver: null, passengers: []};
+var stockCar = {
+  model: "Ford", 
+  year: 2013, 
+  automaticTransmission: true, 
+  driver: null, 
+  passengers: []};
 console.log(stockCar)
 
 /*
@@ -213,11 +221,14 @@ var arrayOfObjects = [
     }
   ]
 function printOrders (orders){
-    for(var i = 0; orders.length; ++1)
-    
-    return orders;
+    for(var i = 0; i<orders.length; ++i){
+
+    console.log("id:" + orders[i].id);
+    console.log("date:" + orders[i].date);
+    console.log("orders:" + orders[i].totals);
+    }
 }
-printOrders()
+printOrders(arrayOfObjects);
 
 /*
 8. Addition with an object
@@ -231,6 +242,8 @@ printOrders()
         Invoke your function and pass in your object, store the result to a variable named sumObjResult and use `console.log` 
         to inspect your results.
 */
+
+ 
 
 
 /*
