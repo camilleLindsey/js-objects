@@ -18,8 +18,8 @@ Objects in Javascript can be compared to objects in real life. Objects has a col
       author: "ryan holiday ",
       category: "self help",
       pages: 200,
-    }
-console.log(books)
+    };
+console.log(books);
     /*
 
 2.  Declare a variable named `dog` and create the following properties (key-value pairs) to the object:
@@ -89,7 +89,7 @@ plainBox.color = "pink";
 plainBox.size = 7;
 plainBox.contents = [];
 
-console.log(plainBox)
+console.log(plainBox);
 /*
 5. Declare a variable named `stockCar` and create the following properties (key-value pairs) to the object:
             - add a key named `model` and set its value to the name of an American car manufacturer.
@@ -125,22 +125,22 @@ console.log(stockCar)
    the return value in a variable named `completePerson`. Use `console.log` three times to print the entire object, just 
    the value at `name`, and just the value at `age`.
  */
-var coolPerson = {}
-var plainPerson = {}
-var happyPerson = {}
+var coolPerson = {};
+var plainPerson = {};
+var happyPerson = {};
 function buildPerson (person, nameString, age){
-person.name = nameString
-person.age = age
+person.name = nameString;
+person.age = age;
 
 return person; 
 }
 
-buildPerson(plainPerson, "benjamin", 11)
-buildPerson(happyPerson, "miah", 3)
-buildPerson(coolPerson, "beaver", 22)
-console.log(plainPerson)
-console.log(happyPerson)
-console.log(coolPerson)
+buildPerson(plainPerson, "benjamin", 11);
+buildPerson(happyPerson, "miah", 3);
+buildPerson(coolPerson, "beaver", 22);
+console.log(plainPerson);
+console.log(happyPerson);
+console.log(coolPerson);
 
 
 /*
